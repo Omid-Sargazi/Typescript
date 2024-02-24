@@ -104,7 +104,25 @@ const qq :string|null = null;
 const namm :"Omid" = "Omid";
 console.log(namm)
 
+////////////////////////////////////
+// const ww :string|number = 45;
+// const we :string|number = 45;
+// const wr :string|number = 45;
+// const wt :string|number = 45;
 
+// aliases is a custom type
+type WAliases = string|number
+const ww:WAliases  = 45
+const we:WAliases  = 45
+const wr:WAliases  = 45
+const wt:WAliases  = 45
+type func = (num1:number, num2:number)=>number
+
+let f2:func=(num, num2)=>{
+    return num+ num2
+}
+
+console.log("f2",f2(30,40))
 
 
 

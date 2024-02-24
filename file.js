@@ -79,3 +79,11 @@ const und = undefined;
 const qq = null;
 const namm = "Omid";
 console.log(namm);
+const ww = 45;
+const we = 45;
+const wr = 45;
+const wt = 45;
+let f2 = (num, num2) => {
+    return num + num2;
+};
+console.log("f2", f2(30, 40));
