@@ -58,7 +58,24 @@
 //     }
 // }
 // console.log(obj2)
+// // 
+var Personal;
+(function (Personal) {
+    Personal["NAME"] = "Omid";
+    Personal[Personal["FMALE"] = 0] = "FMALE";
+    Personal[Personal["MALE"] = 1] = "MALE";
+})(Personal || (Personal = {}));
+const obj = {
+    name: Personal.NAME,
+    age: 30,
+    gender: Personal.MALE
+};
+console.log(obj);
+// 
+// null type
 const q = null;
+// undefined type
 const und = undefined;
-const lite = "ali";
-console.log(lite + lite + 9);
+const qq = null;
+const namm = "Omid";
+console.log(namm);
