@@ -27,7 +27,3 @@ let AddCallBack = (a, b, cb) => {
 AddCallBack(100, 200, (res) => {
     console.log(res);
 });
-let AdddCallBack = (a, b, cb) => {
-    const result = a + b;
-    cb(result);
-};

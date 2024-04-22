@@ -18,3 +18,9 @@ if (objectEnum.gender === 1) {
 else {
     console.log(objectEnum);
 }
+///////////////////union, literal, null and undefined//////////////////////////
+let und = undefined;
+let nul = null;
+let nam = "omid";
+nam = "saeed";
+console.log(und, nul, nam);
