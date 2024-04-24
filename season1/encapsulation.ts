@@ -44,3 +44,79 @@ class news {
   
   const ne = new news("Omid");
   ne.printNews();
+
+
+  //////////////////////////////////////////////////////////
+
+class profile
+{
+    public name:string;
+    public age:number;
+    constructor(name:string, age:number)
+    {
+        this.name=name;
+        this.age=age;
+    }
+}
+
+class Profile
+{
+    constructor(public name:string, public age:number){
+    }
+    printResult()
+    {
+        console.log(`my name is ${this.name} and my age is ${this.age}`)
+    }
+}
+
+class Favorite extends Profile
+{
+    constructor(public name:string, public age:number, public fav:string[])
+    {
+        super(name, age)
+    }
+    // printResult()
+    // {
+    //     console.log(`my name is ${this.name} and my age is ${this.age}`)
+    // }
+    addFavorite(text:string)
+    {
+        this.fav.push(text);
+    }
+
+    printFavorite()
+    {
+        console.log(`their favorite are ${this.fav}`)
+    }
+}
+
+
+const inh = new Favorite("omid",42, [])
+inh.addFavorite("climbing")
+inh.addFavorite("gym")
+inh.addFavorite("developer")
+inh.printResult()
+
+inh.printFavorite()
+
+
+const pro = new Profile("omid", 42)
+
+pro.printResult();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

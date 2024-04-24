@@ -35,3 +35,45 @@ class news {
 }
 const ne = new news("Omid");
 ne.printNews();
+//////////////////////////////////////////////////////////
+class profile {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+class Profile {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    printResult() {
+        console.log(`my name is ${this.name} and my age is ${this.age}`);
+    }
+}
+class Favorite extends Profile {
+    constructor(name, age, fav) {
+        super(name, age);
+        this.name = name;
+        this.age = age;
+        this.fav = fav;
+    }
+    // printResult()
+    // {
+    //     console.log(`my name is ${this.name} and my age is ${this.age}`)
+    // }
+    addFavorite(text) {
+        this.fav.push(text);
+    }
+    printFavorite() {
+        console.log(`their favorite are ${this.fav}`);
+    }
+}
+const inh = new Favorite("omid", 42, []);
+inh.addFavorite("climbing");
+inh.addFavorite("gym");
+inh.addFavorite("developer");
+inh.printResult();
+inh.printFavorite();
+const pro = new Profile("omid", 42);
+pro.printResult();
