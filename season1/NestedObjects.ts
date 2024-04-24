@@ -32,3 +32,6 @@ console.log(y[1], y[0])
 
 let z:any[]=["saeed", null, true, 123,{name:"Mika"}]
 console.log(z[0],z[1],z[4])
+
+///////////////////////Readonly/////////////////////////
+

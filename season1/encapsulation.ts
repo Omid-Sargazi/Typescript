@@ -26,3 +26,21 @@ const c1 = new course("JAVA","Learning", 2000, "Sargazi")
 console.log(c1.title)//
 // c1.teacher="saeed"
 c1.PrintCourse()
+
+
+
+
+////////////////////////////////
+
+class news {
+    readonly title: string;
+    constructor(n: string) {
+      this.title = n;
+    }
+    printNews() {
+      console.log(this.title);
+    }
+  }
+  
+  const ne = new news("Omid");
+  ne.printNews();
