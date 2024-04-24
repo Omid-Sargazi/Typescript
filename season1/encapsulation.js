@@ -77,3 +77,23 @@ inh.printResult();
 inh.printFavorite();
 const pro = new Profile("omid", 42);
 pro.printResult();
+//////////////////////////////Get & Set////////////////////////////
+class GetAndSet {
+    constructor(number) {
+        this.number = number;
+    }
+    get numberValue() {
+        return this.number;
+    }
+    set numberValue(number) {
+        this.number = number;
+    }
+}
+class GetAndSetChild extends GetAndSet {
+    printVAlue() {
+        console.log(this.numberValue);
+    }
+}
+const getandsetChild = new GetAndSetChild(12);
+getandsetChild.numberValue = 225;
+getandsetChild.printVAlue();
